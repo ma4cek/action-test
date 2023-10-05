@@ -1,3 +1,4 @@
+name: Basic Docker Action
 on:
   workflow_dispatch:
 
@@ -8,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: ma4cek/docker-action@v2
+        uses: ma4cek/docker-action@main
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
